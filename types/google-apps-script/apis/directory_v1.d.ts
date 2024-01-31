@@ -916,7 +916,7 @@ declare namespace GoogleAppsScript {
                 trustedApps?: AdminDirectory.Schema.TrustedAppId[] | undefined;
             }
             interface User {
-                addresses?: object[] | undefined;
+                addresses?: UserAddress[] | undefined;
                 agreedToTerms?: boolean | undefined;
                 aliases?: string[] | undefined;
                 archived?: boolean | undefined;
@@ -925,13 +925,13 @@ declare namespace GoogleAppsScript {
                 customSchemas?: object | undefined;
                 customerId?: string | undefined;
                 deletionTime?: string | undefined;
-                emails?: object[] | undefined;
+                emails?: UserEmail[] | undefined;
                 etag?: string | undefined;
-                externalIds?: object[] | undefined;
-                gender?: object | undefined;
+                externalIds?: UserExternalId[] | undefined;
+                gender?: UserGender | undefined;
                 hashFunction?: string | undefined;
                 id?: string | undefined;
-                ims?: object[] | undefined;
+                ims?: UserIm[] | undefined;
                 includeInGlobalAddressList?: boolean | undefined;
                 ipWhitelisted?: boolean | undefined;
                 isAdmin?: boolean | undefined;
@@ -939,27 +939,27 @@ declare namespace GoogleAppsScript {
                 isEnforcedIn2Sv?: boolean | undefined;
                 isEnrolledIn2Sv?: boolean | undefined;
                 isMailboxSetup?: boolean | undefined;
-                keywords?: object[] | undefined;
+                keywords?: UserKeyword[] | undefined;
                 kind?: string | undefined;
-                languages?: object[] | undefined;
+                languages?: UserLanguage[] | undefined;
                 lastLoginTime?: string | undefined;
-                locations?: object[] | undefined;
+                locations?: UserLocation[] | undefined;
                 name?: AdminDirectory.Schema.UserName | undefined;
                 nonEditableAliases?: string[] | undefined;
                 notes?: object[] | undefined;
                 orgUnitPath?: string | undefined;
                 organizations?: UserOrganization[] | undefined;
                 password?: string | undefined;
-                phones?: object[] | undefined;
-                posixAccounts?: object[] | undefined;
+                phones?: UserPhone[] | undefined;
+                posixAccounts?: UserPosixAccount[] | undefined;
                 primaryEmail?: string | undefined;
-                relations?: object[] | undefined;
-                sshPublicKeys?: object[] | undefined;
+                relations?: UserRelation[] | undefined;
+                sshPublicKeys?: UserSshPublicKey[] | undefined;
                 suspended?: boolean | undefined;
                 suspensionReason?: string | undefined;
                 thumbnailPhotoEtag?: string | undefined;
                 thumbnailPhotoUrl?: string | undefined;
-                websites?: object[] | undefined;
+                websites?: UserWebsite[] | undefined;
             }
             interface UserAbout {
                 contentType?: string | undefined;
